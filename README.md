@@ -31,3 +31,6 @@ python3 main.py -data cifar -compression-adaptive-method fixed-0.01 -seeds 1,2,3
 
 The results are saved in `results_*.csv` by default and the prefix `results` can be changed to another value by specifying the `-out` argument.
 
+This code was inspired by and derived from past work with other collaborators, such as:
+- https://github.com/PengchaoHan/EasyFL/
+- https://github.com/IBM/adaptive-federated-learning
