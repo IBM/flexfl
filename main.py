@@ -151,6 +151,7 @@ if __name__ == "__main__":
 
                     w_tmp = model.get_weight()  # deepcopy is already included here
                     w_tmp -= w_global  # This is the difference (i.e., update) in this round
+                    w_tmp /= participation_prob
                     sum_part_cost_at_node[n] += partial_participation.participation_cost_at_node(n, num_iter)
                 else:
                     w_tmp = None
